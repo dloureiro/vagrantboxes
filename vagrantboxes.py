@@ -37,7 +37,7 @@ def addBoxToVagrant(aBox, aName) :
     print "Adding box : " + aName + " from : " + aBox["url"] + " ..."
     command = "vagrant box add \"" + aName + "\" " + aBox["url"]
     #print command
-    print "command executed : " + command
+    #print "command executed : " + command
     #exit()
     try :
         p = subprocess.Popen(command, stdin=subprocess.PIPE, shell=True)
